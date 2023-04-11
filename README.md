@@ -1,2 +1,2 @@
-# learning.net
-A guide to adopting C#/.NET.
+# Learn.NET
+An open guide to learning C#/.NET/ASP.NET Core and software design patterns.
