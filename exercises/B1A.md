@@ -3,6 +3,10 @@
 > Before we get to the testing bits, we introduce opinionated structuring for simple .NET applications.
 > Some OOP paradigms like inheritance, polymorphism, etc. are showcased here.
 
+## Tips
+- You may copy the example files from [dystopiandev](../solutions/B1A/dystopiandev/) to skip file creation in this exercise.
+- Creating the files yourself will help explain the steps, but the example exists as a reference. This is the recommended approach.
+
 ## Tasks
 - [x] I. In the exercise solution directory, create a new **empty** solution named `Calculators`. Path: `<repo root>/B1A/<your github username>/`. See [example](../solutions/B1A/dystopiandev/Calculators).
 - [x] II. Add a new .NET 7 project (of class library type) named `Calculators.Features` to the solution.
@@ -43,8 +47,7 @@
        }
    }
    ```
-- [ ] V. Replace all `throw new NotImplementedException();` in the `SimpleCalculator<T>` class with the proper implementation details. Run unit tests in the solution via your IDE or `dotnet test` in shell. This step is complete when all tests pass.
-- [x] VI. Add a SpecFlow.NET project with the following `SimpleCalculator.feature` Gherkin:
+- [x] V. Add a SpecFlow.NET project with the following `SimpleCalculator.feature` Gherkin:
    ```gherkin
    Feature: SimpleCalculator
    In order to perform basic arithmetic operations
@@ -116,7 +119,7 @@
              | -6    |
              | 10000 |
    ```
-- [x] VII. Add the following step bindings in `SimpleCalculatorSteps.cs`:
+- [x] VI. Add the following step bindings in `SimpleCalculatorSteps.cs`:
    ```cs
    [Binding]
    public class SimpleCalculatorSteps
@@ -176,4 +179,5 @@
        }
    }
    ```
+- [ ] VII. Replace all `throw new NotImplementedException();` in the `SimpleCalculator<T>` class with the proper implementation details. Run unit tests in the solution via your IDE or `dotnet test` in shell. This step is complete when all tests pass.
 - [ ] VIII. [Create a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) targeting the `main` branch of this repository.
