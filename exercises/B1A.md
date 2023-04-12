@@ -4,9 +4,7 @@
 > Some OOP paradigms like inheritance, polymorphism, etc. are showcased here.
 
 ## Tasks
-- [x] I. In the exercise solution directory, create a new solution named `Calculators`.
- - Path: `<repo root>/B1A/<your github username>/Calculators.sln`
- - Example: [../solutions/dystopiandev/B1A/Calculators.sln](../solutions/B1A/dystopiandev/Calculators.sln)
+- [x] I. In the exercise solution directory, create a new solution named `Calculators`. Path: `<repo root>/B1A/<your github username>/`. See [example](../solutions/B1A/dystopiandev/Calculators).
 - [x] II. Add a new project (of class library type) named `Calculators.Features` to the solution.
 - [x] III. Add an `ISimpleCalculator` interface to `Calculators.Features`:
    ```cs
