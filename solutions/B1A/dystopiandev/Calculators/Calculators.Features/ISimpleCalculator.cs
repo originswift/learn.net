@@ -1,8 +1,7 @@
-﻿using System.Numerics;
+﻿namespace Calculators.Features;
 
-namespace Calculators.Features;
-
-public interface ISimpleCalculator<T> where T : INumber<T>
+public interface ISimpleCalculator<T>
+    where T : struct, IComparable, IConvertible, IEquatable<T>, IFormattable
 {
     T Add(T a, T b);
     T Subtract(T a, T b);

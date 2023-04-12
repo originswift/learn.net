@@ -4,11 +4,12 @@
 > Some OOP paradigms like inheritance, polymorphism, etc. are showcased here.
 
 ## Tasks
-- [x] I. In the exercise solution directory, create a new solution named `Calculators`. Path: `<repo root>/B1A/<your github username>/`. See [example](../solutions/B1A/dystopiandev/Calculators).
-- [x] II. Add a new project (of class library type) named `Calculators.Features` to the solution.
+- [x] I. In the exercise solution directory, create a new **empty** solution named `Calculators`. Path: `<repo root>/B1A/<your github username>/`. See [example](../solutions/B1A/dystopiandev/Calculators).
+- [x] II. Add a new .NET 7 project (of class library type) named `Calculators.Features` to the solution.
 - [x] III. Add an `ISimpleCalculator` interface to `Calculators.Features`:
    ```cs
-   public interface ISimpleCalculator<T> where T : INumber<T>
+   public interface ISimpleCalculator<T>
+       where T : struct, IComparable, IConvertible, IEquatable<T>, IFormattable
    {
        T Add(T a, T b);
        T Subtract(T a, T b);
@@ -18,7 +19,8 @@
    ```
 - [x] IV. Add a concrete implementation, `SimpleCalculator` for `ISimpleCalculator<T>` in `Calculators.Features`:
    ```cs
-   public class SimpleCalculator<T> : ISimpleCalculator<T> where T : INumber<T>
+   public class SimpleCalculator<T> : ISimpleCalculator<T>
+       where T : struct, IComparable, IConvertible, IEquatable<T>, IFormattable
    {
        public T Add(T a, T b)
        {

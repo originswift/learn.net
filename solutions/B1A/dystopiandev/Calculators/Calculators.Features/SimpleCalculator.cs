@@ -2,7 +2,8 @@ using System.Numerics;
 
 namespace Calculators.Features;
 
-public class SimpleCalculator<T> : ISimpleCalculator<T> where T : INumber<T>
+public class SimpleCalculator<T> : ISimpleCalculator<T>
+    where T : struct, IComparable, IConvertible, IEquatable<T>, IFormattable
 {
     public T Add(T a, T b)
     {
