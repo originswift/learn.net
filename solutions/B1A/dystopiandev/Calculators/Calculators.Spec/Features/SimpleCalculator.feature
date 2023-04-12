@@ -3,7 +3,7 @@ In order to perform basic arithmetic operations
 As a developer
 I want to use the concrete SimpleCalculator class
 
-    Scenario Outline: Add two positive numbers
+    Scenario Outline: Add two numbers
         When I call Add with arguments <a> and <b>
         Then the returned value should be <c>
 
