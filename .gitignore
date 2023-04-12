@@ -57,8 +57,6 @@
 *.sdf
 *.dsp
 *.opensdf
-*.sln
-*.csproj
 *.vbproj
 *.userprefs
 *.docstates
@@ -80,12 +78,15 @@ config/*.yml
 config/*.config
 secrets.json
 *.pem
- # Other files
-nuget.config
-bower.json
-package.json
-tsconfig.json
-webpack.config.js
-yarn.lock
-.idea/
-.vs/
+
+# macOS-specific files
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+**/Icon?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
+
