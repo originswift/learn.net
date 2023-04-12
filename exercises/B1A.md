@@ -9,7 +9,7 @@
 - [x] III. Add an `ISimpleCalculator` interface to `Calculators.Features`:
    ```cs
    public interface ISimpleCalculator<T>
-       where T : struct, IComparable, IConvertible, IEquatable<T>, IFormattable
+       where T : struct, IComparable, IConvertible, IEquatable<T>, IFormattable, INumberBase<T>
    {
        T Add(T a, T b);
        T Subtract(T a, T b);
@@ -20,7 +20,7 @@
 - [x] IV. Add a concrete implementation, `SimpleCalculator` for `ISimpleCalculator<T>` in `Calculators.Features`:
    ```cs
    public class SimpleCalculator<T> : ISimpleCalculator<T>
-       where T : struct, IComparable, IConvertible, IEquatable<T>, IFormattable
+       where T : struct, IComparable, IConvertible, IEquatable<T>, IFormattable, INumberBase<T>
    {
        public T Add(T a, T b)
        {
